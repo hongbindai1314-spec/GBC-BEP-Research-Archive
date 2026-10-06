@@ -4,11 +4,5 @@ title: "GBC-BEP reproducibility archive"
 version: "1.0.0"
 date-released: 2026-10-06
 authors:
-  - family-names: "Bai"
-    given-names: "Fusheng"
-  - family-names: "Pi"
-    given-names: "Jiatian"
-  - family-names: "Yang"
-    given-names: "Xinmin"
-  - family-names: "Yang"
-    given-names: "You"
+  - family-names: "Dai"
+    given-names: "Hongbin"
