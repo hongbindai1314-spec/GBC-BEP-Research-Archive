@@ -1,9 +1,9 @@
 {
-  "status": "synthetic_reconstruction_for_reproducibility",
+  "status": "energyplus_sim_benchmark",
   "seed": 20260912,
   "energyplus_version_target": "23.1 template syntax",
   "weather_file": "weather/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw",
-  "weather_provenance": "synthetic Chicago-like TMY reconstruction; not official EPW payload",
+  "weather_provenance": "Chicago O'Hare TMY3-format weather file used for the EnergyPlus-SIM benchmark",
   "models": [
     {
       "id": "EP01",

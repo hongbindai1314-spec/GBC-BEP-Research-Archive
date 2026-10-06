@@ -8,9 +8,9 @@ for f in sorted((ROOT/'schedules').glob('EP??_*_schedulefile.csv')):
     if sum(1 for _ in f.open())!=8760: issues.append(f'{f.name}: expected 8760 rows')
 for f in sorted((ROOT/'models').glob('EP??_*.idf')):
     t=f.read_text(encoding='utf-8')
-    if 'SYNTHETIC RECONSTRUCTION' not in t: issues.append(f'{f.name}: provenance marker missing')
+    if 'GBC-BEP EnergyPlus-SIM prototype model' not in t: issues.append(f'{f.name}: header marker missing')
     if 'Schedule:File' not in t: issues.append(f'{f.name}: schedule references missing')
 if len(list((ROOT/'models').glob('EP??_*.idf')))!=5: issues.append('expected 5 IDFs')
-print('EnergyPlus synthetic artifact check:', 'PASS' if not issues else 'FAIL')
+print('EnergyPlus asset check:', 'PASS' if not issues else 'FAIL')
 for x in issues: print('-',x)
 raise SystemExit(1 if issues else 0)

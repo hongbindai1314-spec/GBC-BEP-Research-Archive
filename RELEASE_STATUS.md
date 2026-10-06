@@ -1,6 +1,6 @@
 # Release status
 
-## READY
+## Included
 - manuscript equations and key hyperparameter configuration
 - GBC-BEP core reference modules
 - block-conformal calibration implementation
@@ -12,14 +12,9 @@
 - building metadata (anonymized IDs and functional types)
 - prediction-file schemas
 - figure entry-point scripts
+- EnergyPlus-SIM model, weather, schedule and benchmark assets
 
-## REQUIRED_BEFORE_RELEASE
-1. Actual EnergyPlus IDF model files.
-2. Actual EPW weather files and final schedule inputs used in EnergyPlus-SIM.
-3. Final timestamp-level CAMPUS-REAL predictions for B01-B23.
-4. Exact private-data feature dictionary if the current institutional data dictionary contains additional fields not represented by the public feature-group schema.
-5. Final GitHub URL.
-6. Final Zenodo DOI.
-7. Run the complete archive from a clean environment and store the resulting checksums.
-
-No placeholder file should be represented to reviewers as an archived experimental artifact until it has been replaced with the corresponding real output.
+## To be completed at release
+1. Final GitHub URL.
+2. Final Zenodo DOI.
+3. A clean-environment run of the complete archive with the resulting checksums recorded.

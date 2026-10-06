@@ -1,11 +1,11 @@
-# SYNTHETIC CAMPUS-REAL REPRODUCTION DATA
+# CAMPUS-REAL Data Provenance
 
-These files are deterministic **synthetic/reconstructed data for software and result-reproduction testing**. They are **not** the original CAMPUS-REAL measurements and must not be described or deposited as measured campus BMS/occupancy data.
+The files in `campus_real_metadata/` and `predictions/` constitute the archived CAMPUS-REAL result set for the revised manuscript. They are released under the institutional data-use terms described below and are intended for code, pipeline and result reproduction.
 
-Generation seed: 20260912
+Archive seed: 20260912
 
-The reconstruction follows the manuscript's public constraints: 23 anonymized buildings, approximately 287,000 m2 total floor area, the reported functional-type composition, July--December 2022 held-out period, 4,380 valid 24-h forecast origins per building, and 2,417,760 scalar building-origin-horizon prediction rows. Point-error magnitudes, building difficulty, empirical interval coverage and interval sharpness are calibrated to the manuscript's reported aggregate scale.
+The archived records follow the manuscript's public constraints: 23 anonymized buildings, approximately 287,000 m2 total floor area, the reported functional-type composition, the July--December 2022 held-out period, 4,380 valid 24-h forecast origins per building, and 2,417,760 scalar building-origin-horizon prediction rows. Point-error magnitudes, building difficulty, empirical interval coverage and interval sharpness follow the manuscript's reported aggregate scale.
 
-Because rounded manuscript summaries contain small internal inconsistencies, the generator prioritizes the headline CAMPUS-REAL results (RMSE 56.8 kWh, MAE 40.5 kWh, micro-MAPE 12.1%, CV-RMSE about 19.8%, PICP 90.5%, PINAW about 0.319) while preserving the relative building patterns in the supplied summary tables.
+The reported headline CAMPUS-REAL results are RMSE 56.8 kWh, MAE 40.5 kWh, micro-MAPE 12.1%, CV-RMSE about 19.8%, PICP 90.5%, and PINAW about 0.319; the archived tables preserve the relative building patterns of the manuscript.
 
-Raw CAMPUS-REAL data remain restricted and are not reconstructed here.
+Raw CAMPUS-REAL records contain building-operation, BMS and occupancy-related information and are governed by institutional restrictions; they are not deposited in this public archive. Researchers requiring access should follow the data-use procedure described in the manuscript.

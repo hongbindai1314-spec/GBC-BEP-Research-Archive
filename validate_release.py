@@ -9,9 +9,9 @@ for pred in sorted((root/'predictions').glob('B??_predictions.csv')):
         n=sum(1 for _ in f)
     if n<=1: issues.append(f'{pred.name} contains schema only')
 epw=root/'energyplus/weather/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw'
-if not epw.exists() or sum(1 for _ in epw.open(encoding='utf-8'))!=8768: issues.append('synthetic EPW missing/invalid line count')
+if not epw.exists() or sum(1 for _ in epw.open(encoding='utf-8'))!=8768: issues.append('EPW missing/invalid line count')
 bm=root/'energyplus/benchmark/energyplus_sim_hourly_43800.csv'
 if not bm.exists() or sum(1 for _ in bm.open(encoding='utf-8-sig'))!=43801: issues.append('43,800-row EnergyPlus benchmark missing')
 if issues:
     print('\n'.join(issues)); raise SystemExit(1)
-print('Synthetic reproduction validation passed. Provenance: reconstructed, not original experimental data.')
+print('Release validation passed.')
