@@ -1,0 +1,29 @@
+baseline_suite:
+  point_forecasting:
+    - SVR
+    - Random Forest
+    - XGBoost
+    - LightGBM
+    - LSTM
+    - GRU
+    - TFT
+    - N-BEATS
+    - PatchTST
+    - iTransformer
+    - PINN
+  probabilistic:
+    - MCD-LSTM
+    - QRF
+    - CQR
+  closest_representation:
+    - point-level + revised head
+    - fixed temporal bins + revised head
+    - K-means + revised head
+    - GMM + revised head
+    - Mahalanobis-KNN + revised head
+    - single-level GB + revised head
+    - conventional GB regression
+tuning:
+  optimizer: Optuna
+  trials_per_method: 100
+  objective: validation_RMSE

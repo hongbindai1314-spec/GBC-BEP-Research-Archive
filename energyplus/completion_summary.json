@@ -1,0 +1,13 @@
+{
+  "energyplus_models": 5,
+  "weather_epw_lines": 8768,
+  "weather_data_hours": 8760,
+  "schedule_files": 5,
+  "schedule_rows_each": 8760,
+  "benchmark_rows": 43800,
+  "predictor_count": 22,
+  "test_rows": 8760,
+  "reconstructed_methods": 15,
+  "weather_filename": "USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.epw",
+  "provenance": "synthetic_reconstruction_for_reproducibility"
+}

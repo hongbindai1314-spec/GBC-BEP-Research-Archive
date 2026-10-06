@@ -1,0 +1,38 @@
+forecast:
+  history_hours: 168
+  horizon_hours: 24
+granular_ball:
+  theta: 0.80
+  n_min: 20
+  n0: 20
+  delta: 0.10
+  lambda_reg: 0.001
+  epsilon: 0.000001
+  alpha: 1.0
+  beta: 1.0
+  gamma: 0.5
+retrieval:
+  top_k: 8
+  tau: 1.0
+  eta: 0.1
+  xi: 0.1
+attention:
+  d_attn: 128
+  retrieval_prior_weight: 1.0
+fusion_net:
+  hidden_dims: [256, 128, 64, 32]
+  dropout: 0.2
+training:
+  optimizer: adam
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  batch_size: 256
+  max_epochs: 200
+  early_stopping_patience: 20
+  scheduler: cosine_annealing
+  random_seeds: [1, 2, 3, 4, 5]
+calibration:
+  nominal_coverage: 0.90
+  block_spacing_hours: 24
+  building_specific: true
+  horizon_specific: true

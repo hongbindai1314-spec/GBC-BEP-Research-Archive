@@ -1,0 +1,35 @@
+Synthetic CAMPUS-REAL reproduction validation
+=============================================
+Status: PASS
+
+Prediction files: 23 (B01-B23)
+Rows per building: 105,120
+Forecast origins per building: 4,380
+Horizons per origin: 24
+Total scalar rows: 2,417,760
+Missing values: none
+Required prediction columns: complete
+
+Rounded aggregate point metrics from written CSVs:
+RMSE: 56.7558 kWh (paper headline: 56.8)
+MAE: 40.5000 kWh (paper headline: 40.5)
+CV-RMSE: 19.7825% (paper headline: 19.8%)
+PICP: 90.5000% (paper headline: 90.5%)
+Macro PINAW target/calibration: 0.319
+Synthetic micro-MAPE produced by generator: 12.1000%
+
+Predictive-dispersion / absolute-error Spearman correlations:
+U_within: 0.5305 (paper: 0.531)
+U_between: 0.5870 (paper: 0.587)
+U_raw: 0.6471 (paper: 0.648)
+
+Metadata checks:
+Buildings: 23
+Total synthetic floor area: 287,000 m2
+Functional types: 8 Lecture Hall; 7 Research Lab; 5 Administrative Office; 3 Sports Facility
+Raw-variable schema: 28 variables
+Candidate test origins: 4,392
+Synthetic excluded origins: 12
+Included origins: 4,380
+
+IMPORTANT: These are synthetic/reconstructed values for reproducibility testing, not original CAMPUS-REAL measurements.

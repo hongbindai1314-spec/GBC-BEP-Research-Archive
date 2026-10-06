@@ -1,0 +1,16 @@
+campus_real:
+  training:
+    start: "2020-01-01 00:00:00"
+    end: "2021-12-31 23:59:59"
+  calibration_validation:
+    start: "2022-01-01 00:00:00"
+    end: "2022-06-30 23:59:59"
+  test:
+    start: "2022-07-01 00:00:00"
+    end: "2022-12-31 23:59:59"
+energyplus_sim:
+  split_rule:
+    train_fraction: 0.70
+    validation_fraction: 0.10
+    test_fraction: 0.20
+  chronological: true
